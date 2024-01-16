@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 920px;
+}
+
+.card {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card img {
+    width: 64px;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+}
+
+.card p {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 60px
+}
+
+.sedans {
+    background: var(--bright-orange);
+    border-radius: 8px 0 0 8px;
+}
+
+.sedans button {
+    color: var(--bright-orange);
+}
+
+.SUVs {
+    background: var(--dark-cyan);
+}
+
+.SUVs button {
+    color: var(--dark-cyan)
+}
+
+.Luxury {
+    background: var(--very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+
+.Luxury button{
+    color: var(--very-dark-cyan);
+}
+
+button{
+    padding: 12px 30px; /*shorthand: primeiro lavor é pra cima e pra baixo, sedundo é pros lados*/
+    background: #f2f2f2; 
+    border: 2px solid #fff; 
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    width: fit-content;
+    justify-self: flex-end; 
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #f2f2f2;
+    cursor: pointer;
+}
+/*site responsivel: site que vai responder conforme a tela que está, vai se ajustar. Funciona bem para todos os dispositivos*/
